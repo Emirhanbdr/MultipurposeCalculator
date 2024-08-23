@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.areaCalculation">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/baslik1"
+            android:text="Kare Dikdörtgen Alan Hesaplama"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/tabanKare"
+            android:hint="Taban uzunluğunu giriniz:"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/yuseklikKare"
+            android:hint="Yükseliği giriniz:"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/krSnc"
+                android:textSize="20sp"
+                android:hint="Sonuç:"
+                android:layout_margin="2dp"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/krBtnSnc"
+                android:textSize="20sp"
+                android:layout_margin="2dp"
+                android:text="Hesap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/baslik2"
+            android:text="Üçgen Alan Hesaplama"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/ucgenTbn"
+            android:layout_marginTop="10dp"
+            android:hint="Taban uzunluğunu giriniz:"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/yukselikUcgen"
+            android:hint="Yüksekliği giriniz:"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ucgenSnc"
+                android:hint="Sonuç:"
+                android:textSize="20sp"
+                android:layout_margin="2dp"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/ucgenBtn"
+                android:textSize="20sp"
+                android:text="Hesap"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/baslik3"
+            android:text="Daire Alanı Hesaplama"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/daireYariCap"
+            android:layout_marginTop="5dp"
+            android:hint="Daire yarı çap değerini giriniz:"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/DaireSnc"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:hint="Sonuç:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/daireBtn"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Hesap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.emirhan.multipurposecalculator.view.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_clasicCalculator"
+            app:destination="@id/clasicCalculator" />
+        <action
+            android:id="@+id/action_menuFragment_to_gradeCalculation"
+            app:destination="@id/gradeCalculation" />
+        <action
+            android:id="@+id/action_menuFragment_to_areaCalculation"
+            app:destination="@id/areaCalculation" />
+    </fragment>
+    <fragment
+        android:id="@+id/clasicCalculator"
+        android:name="com.emirhan.multipurposecalculator.view.clasicCalculator"
+        android:label="fragment_clasic_calculator"
+        tools:layout="@layout/fragment_clasic_calculator" />
+    <fragment
+        android:id="@+id/gradeCalculation"
+        android:name="com.emirhan.multipurposecalculator.view.GradeCalculation"
+        android:label="fragment_grade_calculation"
+        tools:layout="@layout/fragment_grade_calculation" />
+    <fragment
+        android:id="@+id/areaCalculation"
+        android:name="com.emirhan.multipurposecalculator.view.areaCalculation"
+        android:label="fragment_area_calculation"
+        tools:layout="@layout/fragment_area_calculation" />
+</navigation>
